@@ -1,0 +1,27 @@
+1.Create new Project 
+2.asp.net core web app(Model-View-Controller)
+3.Disable configure for http -->enable docker and enable Do not use top-level statements.
+4.Right click on App_name and click on Manage Nuget Packages-->Go to Browse-->Install 7 Depenedences
+	--> Search for entity.
+	i.Microsoft.EntityFrameworkCore
+	ii.Microsoft.EntityFrameworkCore.Relational.
+	iii.Microsoft.EntityFrameworkCore.SqlServer.
+	iv.Microsoft.EntityFrameworkCore.Tools
+	--> Search for Mysql 
+	v.Pomelo
+	vi.Mysql.EntityFramework
+	--> Search for design
+	vii.Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+5.Right Click on App_name and Add --> new Folder-->name the folder with name Data -->and right click on Data folder-->create new item-->new class MyDbContext
+6. class MyDbContext:Dbcontext
+{
+	public MyDbContext(DbContextOptions<MyDbContext> options) : base(options) { }
+}
+7.Add new Movie Class -->Entity -->
+	Annotation :: 
+		[key]
+		id
+		[required(errormessage="file not found")]
+		Name
+	
