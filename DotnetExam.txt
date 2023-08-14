@@ -24,4 +24,11 @@
 		id
 		[required(errormessage="file not found")]
 		Name
+8.Commands :: 
+	go to tools -->nugget package manager -->
+add-migration i
+update-database
+
+your table will be created and then run the project 
+
 	
